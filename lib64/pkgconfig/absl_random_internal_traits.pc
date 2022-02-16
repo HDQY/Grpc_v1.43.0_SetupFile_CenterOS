@@ -1,0 +1,12 @@
+prefix=/root/grpc_v1.43.0
+exec_prefix=${prefix}
+libdir=/root/grpc_v1.43.0/lib64
+includedir=/root/grpc_v1.43.0/include
+
+Name: absl_random_internal_traits
+Description: Abseil random_internal_traits library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_config = 20211102
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

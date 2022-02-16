@@ -1,0 +1,12 @@
+prefix=/root/grpc_v1.43.0
+exec_prefix=${prefix}
+libdir=/root/grpc_v1.43.0/lib64
+includedir=/root/grpc_v1.43.0/include
+
+Name: absl_bad_any_cast_impl
+Description: Abseil bad_any_cast_impl library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_config = 20211102, absl_raw_logging_internal = 20211102
+Libs: -L${libdir}  -labsl_bad_any_cast_impl
+Cflags: -I${includedir} -DNOMINMAX

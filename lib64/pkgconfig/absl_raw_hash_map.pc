@@ -1,0 +1,12 @@
+prefix=/root/grpc_v1.43.0
+exec_prefix=${prefix}
+libdir=/root/grpc_v1.43.0/lib64
+includedir=/root/grpc_v1.43.0/include
+
+Name: absl_raw_hash_map
+Description: Abseil raw_hash_map library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_container_memory = 20211102, absl_raw_hash_set = 20211102, absl_throw_delegate = 20211102
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

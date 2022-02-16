@@ -1,0 +1,13 @@
+prefix=/root/grpc_v1.43.0
+exec_prefix=/root/grpc_v1.43.0
+libdir=/root/grpc_v1.43.0/lib
+sharedlibdir=/root/grpc_v1.43.0/lib
+includedir=/root/grpc_v1.43.0/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

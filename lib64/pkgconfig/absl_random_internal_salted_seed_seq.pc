@@ -1,0 +1,12 @@
+prefix=/root/grpc_v1.43.0
+exec_prefix=${prefix}
+libdir=/root/grpc_v1.43.0/lib64
+includedir=/root/grpc_v1.43.0/include
+
+Name: absl_random_internal_salted_seed_seq
+Description: Abseil random_internal_salted_seed_seq library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_inlined_vector = 20211102, absl_optional = 20211102, absl_span = 20211102, absl_random_internal_seed_material = 20211102, absl_type_traits = 20211102
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

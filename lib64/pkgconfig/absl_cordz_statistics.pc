@@ -1,0 +1,12 @@
+prefix=/root/grpc_v1.43.0
+exec_prefix=${prefix}
+libdir=/root/grpc_v1.43.0/lib64
+includedir=/root/grpc_v1.43.0/include
+
+Name: absl_cordz_statistics
+Description: Abseil cordz_statistics library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_config = 20211102, absl_core_headers = 20211102, absl_cordz_update_tracker = 20211102, absl_synchronization = 20211102
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

@@ -1,0 +1,12 @@
+prefix=/root/grpc_v1.43.0
+exec_prefix=${prefix}
+libdir=/root/grpc_v1.43.0/lib64
+includedir=/root/grpc_v1.43.0/include
+
+Name: absl_cordz_sample_token
+Description: Abseil cordz_sample_token library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_config = 20211102, absl_cordz_handle = 20211102, absl_cordz_info = 20211102
+Libs: -L${libdir}  -labsl_cordz_sample_token
+Cflags: -I${includedir} -DNOMINMAX
